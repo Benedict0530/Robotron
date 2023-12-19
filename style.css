@@ -1,0 +1,109 @@
+html, body {
+    height: 100%;
+            -webkit-tap-highlight-color: transparent;
+            user-select: none;
+            overscroll-behavior: none;
+            margin: 0;
+            padding: 0;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    background-image: url('https://raw.githubusercontent.com/Ben00000000/Robot/main/bgnew.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh; /* Set the height to 100% of the viewport height */
+    margin: 0; /* Remove default body margin */
+}
+
+.player {
+    width: 20%; /* Adjust the percentage as needed */
+    height: 30%;
+    background-image: url('https://raw.githubusercontent.com/Ben00000000/Robot/main/frame_00_delay-0.04s.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%; /* Adjusted to always fit its size */
+    position: absolute;
+    left: 11%; /* Adjust the left property to position the player as needed */
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+.circle {
+    width: 20px;
+    height: 20px;
+   background: #F5B948; /* Solid color fallback */
+background: linear-gradient(45deg, #F5B948, #F5B948); /* Gradient */
+    border-radius: 50%;
+    position: absolute;
+    transition: transform 0.5s ease-in-out;
+    display: none;
+}
+
+.chasing-shape {
+     width: 15%; /* Adjust the percentage as needed */
+    height: 20%;
+    background-image: url('https://raw.githubusercontent.com/Ben00000000/Alien/main/gray__0012_run_1.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%; /* Adjusted to always fit its size */
+    position: absolute;
+    left: 10%; /* Adjust the left property to position the player as needed */
+    transform: translateX(-50%);
+    z-index: 2;
+}
+.hp-bar-container {
+    position: fixed;
+    top: 30%;
+    left: 10px;
+    width: 20%;
+    height:2%;
+    background-color: #ddd;
+    border: 1px solid #333;
+    overflow: hidden;
+}
+
+.hp-bar {
+    height: 100%;
+    width: 100%;
+    background-color: #4caf50; /* Green color for HP */
+    transition: width 0.3s ease;
+}
+
+#score-container {
+  position: absolute;
+  top: 10px; /* Adjust the top position as needed */
+  left: 10px; /* Adjust the left position as needed */
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  color: white;
+}
+.game-over {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 2%;
+    border-radius: 10px;
+    z-index: 99999; /* Set the z-index value */
+}
+
+
+.game-over h1 {
+    font-size: 1.5em;
+    margin-bottom: 2%;
+}
+.game-over p {
+    font-size: 1.5em;
+    margin-bottom: 2%;
+}
+
+.game-over button {
+    padding: 1% 2%;
+    font-size: 1em;
+    cursor: pointer;
+}
