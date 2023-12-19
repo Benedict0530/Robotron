@@ -7,9 +7,22 @@
     <title>Wiz</title>
 </head>
 <body>
-  <script>
-    // Redirect to the specified link on page load
-    window.location.href = "https://789bet.cafe/";
-  </script>
+  <div class="hp-bar-container">
+    <div class="hp-bar" id="playerHpBar"></div>
+</div>
+  <div id="score-container">
+<span id="score">0</span>
+</div>
+
+    <div class="player"></div>
+  <div class="circle"></div>
+  
+     <!-- Game content goes here -->
+    <div class="game-over" id="gameOverScreen">
+        <h1>
+"Caught off guard, you stumbled into the clutches of an ingenious ambush, where every shadow hid a new threat, turning the game into a thrilling test of strategy and survival."</h1>
+        <p>Your score: <span id="finalScore">0</span></p>
+        <button onclick="restartGame()">Restart</button>
+    </div>
 </body>
 </html>
