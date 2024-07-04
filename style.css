@@ -10,7 +10,7 @@ html, body {
 body {
     display: flex;
     align-items: center;
-    background-image: url('https://raw.githubusercontent.com/Ben00000000/Robot/main/bgnew.jpg');
+    background-image: url('img/bgnew.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -21,7 +21,7 @@ body {
 .player {
     width: 20%; /* Adjust the percentage as needed */
     height: 30%;
-    background-image: url('https://raw.githubusercontent.com/Ben00000000/Robot/main/frame_00_delay-0.04s.png');
+    background-image: url('img/frame_00_delay-0.04s.png');
     background-repeat: no-repeat;
     background-size: 100% 100%; /* Adjusted to always fit its size */
     position: absolute;
@@ -44,7 +44,7 @@ background: linear-gradient(45deg, #F5B948, #F5B948); /* Gradient */
 .chasing-shape {
      width: 15%; /* Adjust the percentage as needed */
     height: 20%;
-    background-image: url('https://raw.githubusercontent.com/Ben00000000/Alien/main/gray__0012_run_1.png');
+    background-image: url('img/gray__0012_run_1.png');
     background-repeat: no-repeat;
     background-size: 100% 100%; /* Adjusted to always fit its size */
     position: absolute;
