@@ -31,10 +31,10 @@ body {
 }
 
 .circle {
-    width: 20px;
-    height: 20px;
-   background: #F5B948; /* Solid color fallback */
-background: linear-gradient(45deg, #F5B948, #F5B948); /* Gradient */
+    width: 5%;
+    height: 5%;
+    background: url('img/Fire1.png'); /* Image background */
+    background-size: cover; /* Cover the entire circle */
     border-radius: 50%;
     position: absolute;
     transition: transform 0.5s ease-in-out;
@@ -54,20 +54,25 @@ background: linear-gradient(45deg, #F5B948, #F5B948); /* Gradient */
 }
 .hp-bar-container {
     position: fixed;
-    top: 30%;
-    left: 10px;
+    top: 15%;
     width: 20%;
-    height:2%;
-    background-color: #ddd;
-    border: 1px solid #333;
+    height: 20%;
+    background-image: url('img/HP0.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
     overflow: hidden;
 }
+
+
+
+
 
 .hp-bar {
     height: 100%;
     width: 100%;
-    background-color: #4caf50; /* Green color for HP */
     transition: width 0.3s ease;
+  
 }
 
 #score-container {
@@ -79,31 +84,47 @@ background: linear-gradient(45deg, #F5B948, #F5B948); /* Gradient */
   color: white;
 }
 .game-over {
-    display: none;
+  
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-image: url('https://raw.githubusercontent.com/Ben00000000/Robot/main/Message.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 50%; /* Adjust the width as a percentage of the parent container */
+    height: 50%; /* Adjust the height as a percentage of the parent container */
     color: #fff;
     padding: 2%;
     border-radius: 10px;
-    z-index: 99999; /* Set the z-index value */
+    z-index: 99999;
+    display: flex;
+    display: none;
 }
-
 
 .game-over h1 {
     font-size: 1.5em;
     margin-bottom: 2%;
 }
-.game-over p {
-    font-size: 1.5em;
-    margin-bottom: 2%;
-}
+
+
 
 .game-over button {
+    background-image: url('https://raw.githubusercontent.com/Ben00000000/Robot/main/Restart%20Button.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 30%; /* Adjust the width as a percentage of the parent container */
+    height: 15%; /* Adjust the height as a percentage of the parent container */
     padding: 1% 2%;
     font-size: 1em;
     cursor: pointer;
+    position: absolute;
+    bottom: 18%; /* Adjust as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    border: none;
+    background-color: transparent;
 }
